@@ -1,0 +1,39 @@
+2026-04-24 18:26:15,599 [INFO] Listening on 0.0.0.0:5000 (PSK chat)
+2026-04-24 18:26:53,097 [INFO] Client connected: user-1 (127.0.0.1:49341)
+2026-04-24 18:26:56,619 [INFO] [user-1] hello
+2026-04-24 18:26:59,699 [INFO] [user-1] im jayanth
+2026-04-24 18:27:03,726 [INFO] [user-1] how r uh?
+2026-04-24 18:27:24,754 [INFO] [user-1] i need mac
+2026-04-24 18:28:59,759 [INFO] Listening on 0.0.0.0:5050 (PSK chat)
+2026-04-24 18:29:17,439 [INFO] Client connected: user-1 (127.0.0.1:49364)
+2026-04-24 18:30:15,031 [INFO] Client connected: user-2 (127.0.0.1:49368)
+2026-04-24 18:30:30,241 [INFO] [user-2] hello i'm jayanth, how r uh?
+2026-04-24 18:31:24,218 [INFO] [user-1] yeah im fine
+2026-04-24 18:31:48,099 [INFO] [user-2] what are uh doing?
+2026-04-24 18:34:13,297 [INFO] [user-1] nothing man just surfing on the internet
+2026-04-24 18:34:23,101 [INFO] [user-2] i'm doing nothing much just surfing on the internet
+
+
+
+2026-04-24 18:38:18,230 [INFO] [user-1] yes, peer sure
+2026-04-24 18:38:23,319 [INFO] [user-2] yes, peer sure
+
+2026-04-24 18:39:09,726 [INFO] [user-2] ok done, i'll there in a moment
+2026-04-24 18:39:12,798 [INFO] [user-1] ok done
+2026-04-24 18:40:32,654 [INFO] Client connected: user-3 (127.0.0.1:49619)
+2026-04-24 18:40:47,377 [INFO] [user-3] hhi
+2026-04-24 18:41:05,149 [INFO] Client connected: user-4 (127.0.0.1:49636)
+2026-04-24 18:41:12,207 [INFO] [user-4] hi
+2026-04-24 18:46:23,325 [INFO] Listening on 0.0.0.0:5050 (PSK chat)
+2026-04-24 18:47:44,332 [INFO] Listening on 0.0.0.0:6060 (PSK chat)
+2026-04-24 18:48:55,338 [INFO] Client connected: user-1 (127.0.0.1:49774)
+2026-04-24 18:49:35,980 [INFO] Listening on 0.0.0.0:6060 (PSK chat)
+2026-04-24 18:49:49,573 [INFO] Client connected: user-1 (127.0.0.1:49783)
+2026-04-24 18:49:55,545 [INFO] Client connected: user-2 (127.0.0.1:49786)
+2026-04-24 18:50:28,419 [INFO] [user-2] hi 
+2026-04-24 18:50:37,750 [INFO] [user-1] hey hiii
+2026-04-24 18:50:41,835 [INFO] [user-1] how r uh?
+2026-04-24 18:51:03,550 [INFO] [user-2] yeah i'm fine, can we chill out 2day?
+2026-04-24 18:51:17,901 [INFO] [user-1] yeah sure peer....
+2026-04-24 18:53:14,757 [INFO] [user-2] ok i'm starting now....
+2026-04-24 18:53:23,642 [INFO] [user-1] okay done
