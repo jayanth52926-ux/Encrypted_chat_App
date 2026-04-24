@@ -9,6 +9,7 @@ The project has three core files: `server.py`, `client.py`, and `crypto_util.py`
 `client.py` connects to the server and lets a user send/receive chat messages.  
 `crypto_util.py` contains the encryption/decryption logic shared by both sides.
 
+# Security
 Security is implemented with **AES-256 in CBC mode** using PyCryptodome. A pre-shared passphrase (PSK) is entered on both server and client, and then converted into a fixed 32-byte key using SHA-256. This means both sides independently generate the same encryption key without sending it over the network.
 
 For each message, the client creates a **new random IV (Initialization Vector)** of 16 bytes. This is very important because CBC mode should not reuse IVs. The message is padded using PKCS7, encrypted, and then sent in a framed format:
@@ -18,6 +19,7 @@ On receive, the other side reads the frame, extracts IV and ciphertext, decrypts
 
 The server supports **basic concurrency**: every connected client runs in its own thread. When one client sends a message, the server decrypts it (for logging/verification), logs it to `chat_server.log`, and then broadcasts the encrypted frame to the other clients.
 
+# Project Demonstrates
 So overall, this project demonstrates:
 - TCP socket communication
 - Symmetric encryption with AES
