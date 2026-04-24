@@ -29,3 +29,49 @@ So overall, this project demonstrates:
 - Message logging on the server
 
 It is intentionally simple and educational, but it follows better practices than fixed-IV examples: random IV per message, framing, and handling variable message lengths. In short, it is a beginner-friendly secure chat prototype that teaches networking plus cryptography fundamentals in one small project.
+
+
+# Commands
+1. cd - create a directory
+   
+2. python3 -m pip install -r requirements.txt
+   
+    * Installs required Python packages listed in requirements.txt.
+    * In this project, it installs pycryptodome (AES encryption library).
+      
+3. python3 server.py --host --port --psk "my_shared_secret"
+   Starts chat server:
+   --host: listen on all network interfaces.
+   --port: server runs on TCP port.
+   --psk "my_shared_secret": pre-shared secret used to derive AES key.
+Server accepts multiple clients, decrypts/logs messages, and relays encrypted data.
+
+4. python3 client.py --host (1) --port --psk "my_shared_secret".
+   Starts one chat client.
+   --host: connect to server on same machine (localhost).
+   --port: must match server port.
+   --psk "my_shared_secret": must match server PSK exactly.
+Type messages; client encrypts before sending and decrypts received messages.
+
+5. python3 client.py --host --port --psk "my_shared_secret".
+   * Run this in another terminal for second user/client.
+   * Lets you test real multi-client chat.
+  
+6. python3 -c "print(open('chat_server.log').read())".
+   * Opens and prints full server log file.
+   * Useful to verify that server received/decrypted messages and tracked client events.
+
+7. kill -9 $(lsof -ti :6060)
+   * Finds process ID using port 6060 and force kills it.
+   * Use only if server fails with “Address already in use”.
+   * lsof -ti : port gives PID; kill -9 terminates it immediately.
+
+# Important Info
+  For chat to work:
+    * same --port on server and all clients.
+    * same --psk on server and all clients.
+
+# For Decryption
+
+Already we have created the command check for the file `test decrypt.py`
+python3 -c "from crypto_util import key_from_psk, encrypt_message, decrypt_message; k=key_from_psk('my_shared_secret'); f=encrypt_message(k,'hello'); print(decrypt_message(k,f))"
