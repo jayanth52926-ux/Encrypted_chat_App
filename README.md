@@ -61,8 +61,8 @@ Type messages; client encrypts before sending and decrypts received messages.
    * Opens and prints full server log file.
    * Useful to verify that server received/decrypted messages and tracked client events.
 
-7. kill -9 $(lsof -ti :6060)
-   * Finds process ID using port 6060 and force kills it.
+7. kill -9 $(lsof -ti : (port number)
+   * Finds process ID using port and force kills it.
    * Use only if server fails with “Address already in use”.
    * lsof -ti : port gives PID; kill -9 terminates it immediately.
 
