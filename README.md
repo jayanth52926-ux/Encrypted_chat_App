@@ -1,7 +1,7 @@
 # Encrypted_chat_App
 How the Encrypted chat apps (like Signal, WhatsApp, and Session) use end-to-end encryption (E2EE) to ensure only the sender and recipient can read messages, protecting data from hackers, service providers, and governments. These apps provide privacy by storing encryption keys solely on user devices, rather than central servers.
 
-# simple encrypted chat application
+# Simple encrypted chat application
 This project is a **simple encrypted chat application** built in Python using a **client-server model**. It allows multiple users to connect to one server and exchange messages securely over TCP sockets. The main goal is to make sure messages are not sent as plain text on the network.
 
 The project has three core files: `server.py`, `client.py`, and `crypto_util.py` (plus `requirements.txt` for dependency setup).  
@@ -68,10 +68,10 @@ Type messages; client encrypts before sending and decrypts received messages.
 
 # Important Info
   For chat to work:
-    * same --port on server and all clients.
-    * same --psk on server and all clients.
+       * same --port on server and all clients.
+       * same --psk on server and all clients.
 
 # For Decryption
 
 Already we have created the command check for the file `test decrypt.py`
-python3 -c "from crypto_util import key_from_psk, encrypt_message, decrypt_message; k=key_from_psk('my_shared_secret'); f=encrypt_message(k,'hello'); print(decrypt_message(k,f))"
+ * python3 -c "from crypto_util import key_from_psk, encrypt_message, decrypt_message; k=key_from_psk('my_shared_secret'); f=encrypt_message(k,'hello'); print(decrypt_message(k,f))"
