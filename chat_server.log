@@ -1,19 +1,4 @@
-2026-04-24 18:26:15,599 [INFO] Listening on 0.0.0.0:5000 (PSK chat)
-2026-04-24 18:26:53,097 [INFO] Client connected: user-1 (127.0.0.1:49341)
-2026-04-24 18:26:56,619 [INFO] [user-1] hello
-2026-04-24 18:26:59,699 [INFO] [user-1] im jayanth
-2026-04-24 18:27:03,726 [INFO] [user-1] how r uh?
-2026-04-24 18:27:24,754 [INFO] [user-1] i need mac
-2026-04-24 18:28:59,759 [INFO] Listening on 0.0.0.0:5050 (PSK chat)
-2026-04-24 18:29:17,439 [INFO] Client connected: user-1 (127.0.0.1:49364)
-2026-04-24 18:30:15,031 [INFO] Client connected: user-2 (127.0.0.1:49368)
-2026-04-24 18:30:30,241 [INFO] [user-2] hello i'm jayanth, how r uh?
-2026-04-24 18:31:24,218 [INFO] [user-1] yeah im fine
-2026-04-24 18:31:48,099 [INFO] [user-2] what are uh doing?
-2026-04-24 18:34:13,297 [INFO] [user-1] nothing man just surfing on the internet
-2026-04-24 18:34:23,101 [INFO] [user-2] i'm doing nothing much just surfing on the internet
-
-
+# Server log
 
 2026-04-24 18:38:18,230 [INFO] [user-1] yes, peer sure
 2026-04-24 18:38:23,319 [INFO] [user-2] yes, peer sure
